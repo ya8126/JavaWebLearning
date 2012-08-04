@@ -1,0 +1,31 @@
+html {
+	font-size: 62.5%;
+}
+
+#title {
+	text-align: center;
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+.diary {
+	width: 500px;
+	margin: 1.0rem auto;
+	padding: 1.0rem;
+	border: solid 1px #999;
+}
+
+.diary .head{
+	text-align: right;
+	font-size: 1.6rem;
+}
+
+.diary .head .date{
+	padding: 0 0.5rem;
+}
+
+.diary .head .weather{
+	padding: 0 0.5rem;
+}
+
+}
