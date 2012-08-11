@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<title>フォーム</title>
+
+<form action="/JavaWebLearning/showParameters" method="get">
+	<p>アカウント：<input type="text" name="name"></p>
+	<p>パスワード：<input type="password" name="pass"></p>
+	<p>趣味：
+	<input id="like_1" type="checkbox" name="like" value="1">
+	<label for="like_1">ギャンブル</label>
+	<input id="like_2" type="checkbox" name="like" value="2">
+	<label for="like_2">お酒</label>
+	<input id="like_3" type="checkbox" name="like" value="3">
+	<label for="like_3">その他</label>
+	</p>
+	<p>プラン：
+		<input id="plan_a" type="radio" name="plan" value="a">
+		<label for="plan_a">Ａプラン</label>
+		<input id="plan_b" type="radio" name="plan" value="b">
+		<label for="plan_b">Ｂプラン</label>
+		<input id="plan_c" type="radio" name="plan" value="c">
+		<label for="plan_c">Ｃプラン</label>
+	</p>
+	<p>支払方法：
+		<select name="payment">
+			<option value="">-- 選択してください　--</option>
+			<option value="banking">銀行振込</option>
+			<option value="creditcard">クレジットカード</option>
+			<option value="webmoney">WebMoney</option>
+		</select>
+	</p>
+	<p>コメント：<textarea name="comment" rows="5" cols="40"></textarea></p>
+	<p><input type="hidden" name="token" value="12345"></p>
+	<p><input type="submit" value="登録"></p>
+</form>
