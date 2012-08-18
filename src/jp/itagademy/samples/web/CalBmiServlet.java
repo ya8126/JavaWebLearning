@@ -33,15 +33,15 @@ public class CalBmiServlet extends HttpServlet {
 
 		out.println("<!DOCTYPE html>");
 		out.println("<meta charset=\"utf-8\">");
-		out.println("<title>BMIè¨ˆç®—</title>");
+		out.println("<title>BMIŒvZ</title>");
 		out.println("<link rel=\"stylesheet\" href=\"bmi.css\">");
-		out.println("<h1>è¨ˆç®—çµæœ</h1>");
-		out.println("<p>ã‚ãªãŸã®BMIã¯");
+		out.println("<h1>BMIŒvZŒ‹‰Ê</h1>");
+		out.println("<p>‚ ‚È‚½‚Ì‚a‚l‚h‚Í");
 		double height = Double.parseDouble(request.getParameter("height"));
 		double weight = Double.parseDouble(request.getParameter("weight"));
 		double bmi = weight * 10000 / height / height;
 		out.println("<span class=\"bmi\">" + bmi + "</span>");
-		out.println("ã§ã™ã€‚");
+		out.println("‚Å‚·B");
 	}
 
 }
