@@ -49,7 +49,7 @@ public class TohyoServlet extends HttpServlet {
 		for(int i=0; i < options.length; i++ ){
 			out.println("<input id=\"" + GETUP_KEY + i + "\" type=\"radio\" name=\"" + GETUP_KEY + "\" value=\"" + options_code[i] + "\"");
 			if (getup.equals(options_code[i])){
-				out.println(" selected=\"selected\"");
+				out.println(" checked=\"checked\"");
 			}
 			out.println(">");
 			out.println("<label for=\"" + GETUP_KEY + i + "\">" + options[i] + "</label><br/>");
