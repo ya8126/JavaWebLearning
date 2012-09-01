@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/memberOnly")
 public class CookieMemberOnlyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final String ACCOUNT_KEY = "account";direct
+	private static final String ACCOUNT_KEY = "account";
 	private static final String PASSWORD_KEY = "password";
 	private static final String DIRECT_KEY = "direct";
 	/**
