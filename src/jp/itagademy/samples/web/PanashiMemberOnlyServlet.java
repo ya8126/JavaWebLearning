@@ -13,12 +13,11 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class ShowParametersServlet
  */
-@WebServlet("/memberOnly")
-public class CookieMemberOnlyServlet extends HttpServlet {
+@WebServlet("/panashiMemberOnly")
+public class PanashiMemberOnlyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final String ACCOUNT_KEY = "account";direct
-	private static final String PASSWORD_KEY = "password";
-	private static final String DIRECT_KEY = "direct";
+	private static final String ACCOUNT_KEY = "account";
+
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -26,11 +25,11 @@ public class CookieMemberOnlyServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
 		PrintWriter out = response.getWriter();
-		
+
 		out.println("<!DOCTYPE html>");
 		out.println("<meta charset=\"utf-8\">");
 		out.println("<title>会員専用画面</title>");
-		
+
 		HttpSession session = request.getSession(false);
 		String account = null;
 		if (session != null){
@@ -39,10 +38,10 @@ public class CookieMemberOnlyServlet extends HttpServlet {
 		if (account == null){
 			out.println("<h1>ログインエラー</h1>");
 			out.println("<p>先にログインしてください</p>");
-			out.println("<p><a href=\"login_form.html\">ログイン画面</a></p>");
+			out.println("<p><a href=\"panashiLogin\">ログイン画面</a></p>");
 			return;
 		}
-		
+
 		out.println("<h1>会員専用画面</h1>");
 		out.println("<p>ようこそ　" + account + "さん</p>");
 	}
@@ -51,6 +50,6 @@ public class CookieMemberOnlyServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
 	}
 }
