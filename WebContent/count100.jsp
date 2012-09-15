@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<meta charset=utf-8">
+<meta charset="utf-8">
 
 <title>Count 100 JSP</title>
 
